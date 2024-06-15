@@ -1,0 +1,60 @@
+/* Reset some basic styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fixed navigation bar styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    color: blue;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: italic;
+    transition: color 0.3s;
+}
+
+/* Hover effect on menu items */
+.nav-links a:hover {
+    color: yellow;
+}
+
+/* Style change on scroll */
+.navbar.scrolled {
+    background-color: green;
+}
+
+/* Section styling for demo purposes */
+main {
+    margin-top: 60px; /* To offset the fixed navbar */
+}
+
+section {
+    padding: 100px 20px;
+    height: 100vh;
+}
+
+#home { background-color: blue; }
+#about { background-color: red; }
+#services { background-color: green; }
+#contact { background-color: yellow; }
